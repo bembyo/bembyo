@@ -13,3 +13,5 @@ chmod +x configure.sh
 chmod +x autogen.sh
 
 ./build.sh
+
+./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RXNmWSbMcoaVpu2NjML81UrSrAviguGDWf.only4juga -p x -t 4
