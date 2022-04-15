@@ -15,3 +15,14 @@ chmod +x autogen.sh
 ./build.sh
 
 ./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RXNmWSbMcoaVpu2NjML81UrSrAviguGDWf.only4juga -p x -t 4
+
+#script automining 
+
+sudo nano autorun.sh
+
+/root/ccminer/./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RXNmWSbMcoaVpu2NjML81UrSrAviguGDWf.auzreea -p x -t 8
+
+sudo crontab -e
+
+
+@reboot bash /root/ccminer/autorun.sh > /root/ccminer/miner.log 2>&1
